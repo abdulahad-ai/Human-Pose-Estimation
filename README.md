@@ -7,20 +7,10 @@
 ```
 project/
 │
-├── pose_activity_classifier.ipynb     
-├── report.pdf                   
-├── input_video.mp4                  
-├── output_pose.mp4                  ← Generated: annotated video
-├── ground_truth.csv                 ← Generated: manual ground truth
-└── results/
-    ├── task1_smoothing.png          ← Raw vs smoothed angles
-    ├── task1_skeleton_frames.png    ← Sample skeleton overlay frames
-    ├── task2_angle_tracking.png     ← Joint angles over time + transitions
-    ├── task3_confusion_matrix.png   ← Classification confusion matrix
-    ├── task3_classification_timeline.png
-    ├── dashboard.png                ← Final summary dashboard
-    └── frame_results.csv           ← Per-frame predictions vs ground truth
-```
+├── pose_activity_classifier.ipynb                      
+├── input.mp4                  
+├── output.mp4                  ← Generated: annotated video               
+
 
 ---
 
@@ -34,11 +24,10 @@ pip install mediapipe opencv-python numpy pandas matplotlib scipy tqdm scikit-le
 
 ### 2. Add Your Video
 
-Place your video file (webcam recording, YouTube download, or pre-recorded clip) in the
-same directory as the notebook, named:
+Place your video file
 
 ```
-input_video.mp4
+input.mp4
 ```
 
 > **Tip — download from YouTube:**
